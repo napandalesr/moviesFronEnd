@@ -1,0 +1,17 @@
+<div class="card" style="background: linear-gradient(to bottom, rgb(247, 176, 94), white);" *ngIf="peliculas">
+
+    <div class="card-body row" style="padding: 40px 80px;">
+
+        <div class="col-md-4 text-center">
+            <img [src]="peliculas.image" [alt]="peliculas.name" style="width: 100%;"/>
+        </div>
+        <div class=col-md-8>
+            <div style="margin: auto; padding: 100px 10px;">
+                <h5>{{peliculas.name}}</h5>
+                <p>{{peliculas.description}}.</p>
+            </div>
+        </div>
+        <div class="col-md-10"></div>
+        <div class="col-md-2"><button>Agragar a favoritos</button> </div>
+    </div>
+</div>
